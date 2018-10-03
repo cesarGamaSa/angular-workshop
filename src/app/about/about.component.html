@@ -1,7 +1,9 @@
-<div class="btn-group btn-group-justified">
-  <button (click)="load()" class="btn btn-secondary">Load</button>
-  <button (click)="increment()" class="btn btn-primary">Increment</button>            
-  <button (click)="decrement()" class="btn btn-primary">Decrement</button>
-</div>            
-
-<div>Current Count: {{ ( count$ | async ).counter }}</div>
+<div style="margin-left: 40px">
+  <div class="btn-group btn-group-justified">
+    <button (click)="load()" class="btn btn-secondary">Load</button>
+    <button (click)="increment()" class="btn btn-primary">Increment</button>            
+    <button (click)="decrement()" class="btn btn-primary">Decrement</button>
+  </div>            
+  
+  <div>Current Count: {{ ( count$ | async ).counter }}</div>
+</div>
