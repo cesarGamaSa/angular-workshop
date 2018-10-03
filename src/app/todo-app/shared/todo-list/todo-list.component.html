@@ -5,7 +5,7 @@
 <ul class="list-group">
   <li *ngFor="let task of (todoList$ | async); let i = index" class="list-group-item list-group-item-info">
     <input type="checkbox" [ngModel]="task.done" (click)="toggleTodo(i)"/>
-    {{task.name}}
+    <a routerLink="/todo/{{i}}">{{task.name}}</a>
   </li>
 </ul>
 
