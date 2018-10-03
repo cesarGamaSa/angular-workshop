@@ -1,7 +1,3 @@
-<p>
-  todo-list works!
-</p>
-
 <ul class="list-group">
   <li *ngFor="let task of (todoList$ | async); let i = index" class="list-group-item list-group-item-info">
     <input type="checkbox" [ngModel]="task.done" (click)="toggleTodo(i)"/>
@@ -9,8 +5,8 @@
   </li>
 </ul>
 
-<hr>
+<hr />
 
-<h3>Debug Stuff</h3>
+<!--h3>Debug Stuff</h3>
 
-<pre>{{todoList$ | async | json}}</pre>
+<pre>{{todoList$ | async | json}}</pre-->
