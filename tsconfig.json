@@ -12,7 +12,8 @@
     "target": "es5",
     "paths": {
       "@app/*": ["app/*"],
-      "@env/*": ["environments/*"]
+      "@env/*": ["environments/*"],
+      "@state/*": ["state/*"]
     },
     "typeRoots": [
       "node_modules/@types"
